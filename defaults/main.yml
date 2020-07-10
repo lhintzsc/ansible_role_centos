@@ -1,5 +1,6 @@
 ---
-centos_ntp_server: "pool.ntp.org"
-centos_http_proxy: ""
-centos_https_proxy: ""
-centos_timezone: Europe/Vienna"
+centos_ntp_server: "{{ secret_ntp_server }}"
+centos_http_proxy: "http://{{ secret_http_proxy_host}}:{{ secret_http_proxy_port }}"
+centos_https_proxy: "http://{{ secret_https_proxy_host}}:{{ secret_https_proxy_port }}"
+centos_timezone: "Europe/Vienna"
+centos_hostname: "{{inventory_hostname}}"
