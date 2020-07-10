@@ -12,10 +12,12 @@ Role Variables
 --------------
 
 Optional Defaults:
+
 centos_timezone: "Europe/Vienna" # default variable
 centos_hostname: "{{inventory_hostname}}" # set hostname according to invetory file)
 
 Mandatory Vars:
+
 centos_ntp_server: "{{ secret_ntp_server }}" # # ntp server from secret
 centos_http_proxy: "http://{{ secret_http_proxy_host}}:{{ secret_http_proxy_port }}" # http proxy from secret
 centos_https_proxy: "http://{{ secret_https_proxy_host}}:{{ secret_https_proxy_port }}" https proxy from secret
@@ -43,5 +45,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
-# ansible_role_centos
+lhintzsc@cisco.com
