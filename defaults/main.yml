@@ -1,0 +1,5 @@
+---
+centos_ntp_server: "pool.ntp.org"
+centos_http_proxy: ""
+centos_https_proxy: ""
+centos_timezone: Europe/Vienna"
