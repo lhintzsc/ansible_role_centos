@@ -6,6 +6,7 @@
   copy:
     src: vimrc
     dest: ~/.vimrc
+
 - name: Copy bashrc file
   copy:
     src: bashrc
@@ -17,6 +18,8 @@
   template:
     src: profile.j2
     dest: /etc/profile
+  notify:
+  - Source bashrc
   
 - name: "Set system timezone to {{ centos_timezone }}"
   timezone:
