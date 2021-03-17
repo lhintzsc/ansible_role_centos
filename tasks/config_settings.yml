@@ -14,7 +14,7 @@
   notify:
   - Source bashrc
 
-- name: Copy profile to set proxy
+- name: Copy profile to set proxy {{ centos_http_proxy }}
   template:
     src: profile.j2
     dest: /etc/profile
