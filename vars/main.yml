@@ -1,5 +1,0 @@
----
-# vars file for test
-centos_ntp_server: ""
-centos_http_proxy: ""
-centos_https_proxy: ""
