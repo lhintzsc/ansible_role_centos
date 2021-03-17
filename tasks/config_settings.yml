@@ -25,7 +25,7 @@
   timezone:
     name: "{{ centos_timezone }}"
 
-- name: Copy NTP configuration file to /etc/ntp.conf
+- name: "Copy NTP conf {{ centos_ntp_server }}  to /etc/ntp.conf"
   template:
     src: ntp.conf.j2
     dest: /etc/ntp.conf
