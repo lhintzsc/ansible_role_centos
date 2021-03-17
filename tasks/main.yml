@@ -1,3 +1,4 @@
+- include: print_vars.yml
 - include: config_settings.yml
 - include: install_packages.yml
 

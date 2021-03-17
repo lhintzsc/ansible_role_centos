@@ -1,0 +1,5 @@
+- debug:
+    var:
+      - "{{ centos_timezone }}"
+      - "{{ centos_ntp_server }}"
+# https://docs.ansible.com/ansible/latest/modules/debug_module.html 
