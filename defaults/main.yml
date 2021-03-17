@@ -1,6 +1,6 @@
 ---
 centos_timezone: "Europe/Vienna"
-centos_hostname: "{{inventory_hostname}}"
-#centos_ntp_server: "{{ lookup('env','SECRET_LAB_NTP_SERVER') }}"
-#centos_http_proxy: "http://{{ lookup('env','SECRET_LAB_HTTP_PROXY') }}:80"
-#centos_https_proxy: "http://{{ lookup('env','SECRET_LAB_HTTPS_PROXY') }}:80"
+centos_hostname: "{{ inventory_hostname }}"
+centos_ntp_server: "{{ centos_ntp_server }}"
+centos_http_proxy: "{{ centos_http_proxy }}"
+centos_https_proxy: "{{ centos_https_proxy }}"
