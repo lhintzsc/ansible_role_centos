@@ -12,6 +12,7 @@
       - traceroute
       - ntp
       - net-tools
+      - python-pip
     update_cache: true
     state: latest
   register: result
