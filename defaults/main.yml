@@ -1,5 +1,5 @@
 ---
-centos_timezone: "Europe/Vienna"
+centos_timezone: "{{ centos_timezone }}"
 centos_hostname: "{{ inventory_hostname }}"
 centos_ntp_server: "{{ centos_ntp_server }}"
 centos_http_proxy: "{{ centos_http_proxy }}"
