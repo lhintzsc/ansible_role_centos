@@ -1,0 +1,6 @@
+---
+centos_timezone: "Europe/Vienna"
+centos_hostname: "{{inventory_hostname}}"
+centos_ntp_server: "{{ vault_centos_ntp_server }}"
+centos_http_proxy: "{{ vault_centos_http_proxy }}"
+centos_https_proxy: "{{ vault_centos_https_proxy }}"
